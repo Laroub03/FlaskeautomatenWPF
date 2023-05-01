@@ -1,0 +1,26 @@
+﻿<Window x:Class="Flaskeautomaten_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flaskeautomaten_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="StartSimulationButton" Content="Start Simulation" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="StartSimulationButton_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="350,171,350,171" Background="#FF00A7FF">
+            <Label Content="Splitter" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="596,50,104,292" Background="#FF00A7FF">
+            <Label Content="{Binding SodaCount}" Margin="-1,1,1,-1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="596,292,104,50" Background="#FF00A7FF">
+            <Label Content="{Binding BeerCount}" Margin="-1,1,1,-1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="100,171,600,171" Background="#FF00A7FF">
+            <Label Content="Bottles" Margin="-1,1,1,-1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <Label Content="Soda" Margin="626,59,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-2.078,1.481"/>
+        <Label Content="Beer" Margin="627,301,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
